@@ -1,6 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum LocationType
+{
+    library,
+    museum,
+    galery,
+    storage
+}
+
 [CreateAssetMenu(fileName = "LocationDatabase", menuName = "Game/Location Database")]
 public class LocationDatabase : ScriptableObject
 {
@@ -21,6 +29,9 @@ public class LocationDatabase : ScriptableObject
 
         [SerializeField] private List<string> _nextLocationNames;
         public List<string> NextLocationNames => _nextLocationNames;
+
+        [SerializeField] private LocationType _type;
+        public LocationType Type => _type;
     }
 
     public List<LocationData> locations = new();

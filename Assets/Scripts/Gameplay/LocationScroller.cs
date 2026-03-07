@@ -10,6 +10,10 @@ public class LocationScroller : MonoBehaviour
     [Header("Settings")]
     public int poolSize = 6;
     public float moveSpeed = 5f;
+    [Header("Score")]
+    [SerializeField] private float scoreMultiplier = 1f;
+    private float distanceTravelled = 0f;
+    private int score = 0;
 
     private List<GameObject> activeSegments = new List<GameObject>();
     private List<float> segmentLengths = new List<float>();
@@ -27,6 +31,26 @@ public class LocationScroller : MonoBehaviour
 
         MoveSegments();
         CheckRecycle();
+
+        UpdateScore();
+    }
+
+    void UpdateScore()
+    {
+        distanceTravelled += moveSpeed * Time.deltaTime;
+
+        int newScore = Mathf.FloorToInt(distanceTravelled * scoreMultiplier);
+
+        if (newScore != score)
+        {
+            score = newScore;
+
+            UIcontroller.Instance.SetScore(score);
+            if (score > PlayerPrefs.GetInt("HighScore", 0))
+            {
+                PlayerPrefs.SetInt("HighScore", score);
+            }
+        }
     }
 
     void GenerateInitialPool()
@@ -47,6 +71,8 @@ public class LocationScroller : MonoBehaviour
         var data = locationDatabase.GetRandomLocation(lastLocation);
         lastLocation = data;
 
+        // Debug.Log(lastLocation.Name);
+
         GameObject segment = Instantiate(
             data.Prefab,
             new Vector3(xPos, 0, 0),
@@ -66,7 +92,7 @@ public class LocationScroller : MonoBehaviour
 
         if (Random.value < 0.5f) return;
 
-        GameObject obstaclePrefab = obstacleDatabase.GetRandomObstacle();
+        GameObject obstaclePrefab = obstacleDatabase.GetRandomObstacle(lastLocation);
 
         if (obstaclePrefab == null) return;
 

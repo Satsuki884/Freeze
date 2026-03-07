@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class UIcontroller : MonoBehaviour
 {
+    public static UIcontroller Instance;
+    void Awake()
+    {
+        Instance = this;
+    }
     [Header("Canvases")]
     [SerializeField] private GameObject _mainMenuPanel;
     [SerializeField] private GameObject _gameplayPanel;
@@ -24,6 +29,7 @@ public class UIcontroller : MonoBehaviour
 
     [Header("UI Elements")]
     [SerializeField] private TMP_Text _scoreTextTMP;
+    [SerializeField] private TMP_Text _recordTextTMP;
     [SerializeField] private LocationScroller _locationScroller;
     [SerializeField] private Animator _playerAnimator;
 
@@ -31,6 +37,7 @@ public class UIcontroller : MonoBehaviour
 
     void Start()
     {
+        _recordTextTMP.text = "Record:"+ PlayerPrefs.GetInt("HighScore", 0).ToString();
         _playerAnimator.SetBool("idle", true);
         _playerAnimator.SetBool("run", false);
         SetAllPanelsInactive();
@@ -42,6 +49,12 @@ public class UIcontroller : MonoBehaviour
         isPaused = false;
 
         InitializeButtons();
+    }
+
+    public void SetScore(int score)
+    {
+        if (_scoreTextTMP != null)
+            _scoreTextTMP.text = score.ToString();
     }
 
     void InitializeButtons()
@@ -90,6 +103,7 @@ public class UIcontroller : MonoBehaviour
         if (_gameplayPanel != null)
             _gameplayPanel.SetActive(true);
 
+        _scoreTextTMP.text = "0";
         Time.timeScale = 1f;
         isPaused = false;
         _locationScroller.StartScrolling();
