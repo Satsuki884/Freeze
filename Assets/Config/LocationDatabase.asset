@@ -14,6 +14,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LocationDatabase
   locations:
   - _name: 1
-    _prefab: {fileID: 0}
+    _prefab: {fileID: 2892432859282294307, guid: 3d6e581f0ce60b94bb4b8393b74ba4f7, type: 3}
     _length: 8
-    _weight: 2
+    _weight: 8
+    _nextLocationNames:
+    - 2
+    - 3
+    - 4
+  - _name: 2
+    _prefab: {fileID: 4840963903546403712, guid: 66c29b2863514e849a67f94c4b4e89f6, type: 3}
+    _length: 8
+    _weight: 8
+    _nextLocationNames:
+    - 2
+    - 3
+    - 4
+  - _name: 3
+    _prefab: {fileID: 1129458496379925888, guid: 03c192cfc23a4994ba0cbc4a0f45527c, type: 3}
+    _length: 8
+    _weight: 8
+    _nextLocationNames:
+    - 2
+    - 3
+    - 4
+  - _name: 4
+    _prefab: {fileID: 788566571099355709, guid: de8ab9ad70ec99d4bb2927af9562414b, type: 3}
+    _length: 8
+    _weight: 8
+    _nextLocationNames:
+    - 5
+    - 6
+    - 7
+    - 1
+  - _name: 5
+    _prefab: {fileID: 9048342700832937679, guid: 31736a97d20ef5b46b00cfe8ca83c12c, type: 3}
+    _length: 8
+    _weight: 8
+    _nextLocationNames:
+    - 5
+    - 6
+    - 7
+    - 1
+  - _name: 6
+    _prefab: {fileID: 8720416876481790350, guid: b4b0b9c61243dd84e967b7aaa1d61341, type: 3}
+    _length: 8
+    _weight: 8
+    _nextLocationNames:
+    - 5
+    - 6
+    - 7
+    - 1
+  - _name: 7
+    _prefab: {fileID: 1740405673108978064, guid: 8441ab66c3a37554b8510c710203f13c, type: 3}
+    _length: 8
+    _weight: 8
+    _nextLocationNames:
+    - 5
+    - 6
+    - 7
+    - 1

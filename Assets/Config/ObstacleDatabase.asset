@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: ObstacleDatabase
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleDatabase
   obstacles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3487735192308540414, guid: 163baf3c415f93442b283425de90a397, type: 3}
+  - {fileID: 2443071886048646786, guid: f6f755a7cb2009440b12e7a6b3f0695f, type: 3}

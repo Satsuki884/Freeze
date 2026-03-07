@@ -31,22 +31,30 @@ public class LocationScroller : MonoBehaviour
 
     void GenerateInitialPool()
     {
-        float spawnZ = 0;
+        float spawnX = 0;
 
         for (int i = 0; i < poolSize; i++)
         {
-            SpawnSegment(spawnZ);
-            spawnZ += segmentLengths[i];
+            SpawnSegment(spawnX);
+            spawnX += segmentLengths[i];
         }
     }
+    LocationDatabase.LocationData lastLocation;
 
-    void SpawnSegment(float zPos)
+    void SpawnSegment(float xPos)
     {
-        var data = locationDatabase.GetRandomLocation();
+        // var data = locationDatabase.GetRandomLocation();
+        var data = locationDatabase.GetRandomLocation(lastLocation);
+        lastLocation = data;
 
-        GameObject segment = Instantiate(data.Prefab, new Vector3(0, 0, zPos), Quaternion.identity, transform);
+        GameObject segment = Instantiate(
+            data.Prefab,
+            new Vector3(xPos, 0, 0),
+            Quaternion.identity,
+            transform
+        );
 
-        SpawnObstacle(segment);
+        // SpawnObstacle(segment);
 
         activeSegments.Add(segment);
         segmentLengths.Add(data.Length);
@@ -62,18 +70,14 @@ public class LocationScroller : MonoBehaviour
 
         if (obstaclePrefab == null) return;
 
-        // Instantiate(obstaclePrefab, segment.transform);
-        Transform point = segment.transform.Find("ObstaclePoint");
-
-        if (point != null)
-            Instantiate(obstaclePrefab, point.position, Quaternion.identity, segment.transform);
+        Instantiate(obstaclePrefab, segment.transform);
     }
 
     void MoveSegments()
     {
         foreach (var segment in activeSegments)
         {
-            segment.transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
+            segment.transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         }
     }
 
@@ -82,17 +86,17 @@ public class LocationScroller : MonoBehaviour
         GameObject first = activeSegments[0];
         float firstLength = segmentLengths[0];
 
-        if (first.transform.position.z < -firstLength)
+        if (first.transform.position.x < -firstLength)
         {
             activeSegments.RemoveAt(0);
             segmentLengths.RemoveAt(0);
 
-            float newZ = activeSegments[activeSegments.Count - 1].transform.position.z +
+            float newX = activeSegments[activeSegments.Count - 1].transform.position.x +
                          segmentLengths[segmentLengths.Count - 1];
 
             var data = locationDatabase.GetRandomLocation();
 
-            first.transform.position = new Vector3(0, 0, newZ);
+            first.transform.position = new Vector3(newX, 0, 0);
 
             SpawnObstacle(first);
 
