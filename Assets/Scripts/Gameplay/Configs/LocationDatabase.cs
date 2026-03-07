@@ -7,31 +7,35 @@ public class LocationDatabase : ScriptableObject
     [System.Serializable]
     public class LocationData
     {
-        [SerializeField] private string _locationName;
-        public string LocationName => _locationName;
-        [SerializeField] private GameObject _locationPrefab;
-        public GameObject LocationPrefab => _locationPrefab;
+        [SerializeField] private string _name;
+        public string Name => _name;
+        [SerializeField] private GameObject _prefab;
+        public GameObject Prefab => _prefab;
+        [SerializeField] private float _length = 20f;
+        public float Length => _length;
+        [SerializeField] private int _weight = 1;
+        public int Weight => _weight;
     }
 
-    [Header("Locations")]
-    [SerializeField] private List<LocationData> locations = new List<LocationData>();
+    public List<LocationData> locations = new();
 
-    public GameObject GetRandomLocation()
+    public LocationData GetRandomLocation()
     {
-        if (locations.Count == 0) return null;
+        int totalWeight = 0;
 
-        int index = Random.Range(0, locations.Count);
-        return locations[index].LocationPrefab;
-    }
+        foreach (var loc in locations)
+            totalWeight += loc.Weight;
 
-    public GameObject GetLocationByName(string name)
-    {
+        int random = Random.Range(0, totalWeight);
+
         foreach (var loc in locations)
         {
-            if (loc.LocationName == name)
-                return loc.LocationPrefab;
+            if (random < loc.Weight)
+                return loc;
+
+            random -= loc.Weight;
         }
 
-        return null;
+        return locations[0];
     }
 }

@@ -24,11 +24,15 @@ public class UIcontroller : MonoBehaviour
 
     [Header("UI Elements")]
     [SerializeField] private TMP_Text _scoreTextTMP;
+    [SerializeField] private LocationScroller _locationScroller;
+    [SerializeField] private Animator _playerAnimator;
 
     private bool isPaused = false;
 
     void Start()
     {
+        _playerAnimator.SetBool("idle", true);
+        _playerAnimator.SetBool("run", false);
         SetAllPanelsInactive();
 
         if (_mainMenuPanel != null)
@@ -88,6 +92,9 @@ public class UIcontroller : MonoBehaviour
 
         Time.timeScale = 1f;
         isPaused = false;
+        _locationScroller.StartScrolling();
+        _playerAnimator.SetBool("idle", false);
+        _playerAnimator.SetBool("run", true);
     }
 
     void TogglePause()
