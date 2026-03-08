@@ -17,6 +17,8 @@ public class MiniGameController : MonoBehaviour
         // зупиняємо рух світу
         LocationScroller.Instance.StopScrolling();
         PlayerController.Instance.SetRun(false);
+        PlayerController.Instance.SetFreeze(true);
+        RatController.Instance.SetRun(false);
         AudioManager.Instance.PlayMusic("miniGame");
 
         UIcontroller.Instance.ShowMiniGame();
@@ -39,7 +41,9 @@ public class MiniGameController : MonoBehaviour
 
         // запускаємо світ знову
         LocationScroller.Instance.StartScrolling();
+        PlayerController.Instance.SetFreeze(false);
         PlayerController.Instance.SetRun(true);
+        RatController.Instance.SetRun(true);
     }
 
     public void Fail()

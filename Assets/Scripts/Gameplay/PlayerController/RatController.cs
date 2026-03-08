@@ -14,6 +14,11 @@ public class RatController : MonoBehaviour
     [SerializeField] private float targetX = 15f;
     [SerializeField] private Animator animator;
 
+    public void SetRun(bool value)
+    {
+        animator.SetBool("run", value);
+    }
+
     public IEnumerator StartIntroRun()
     {
         if (animator != null)
@@ -29,7 +34,5 @@ public class RatController : MonoBehaviour
         pos.x = targetX;
         transform.position = pos;
 
-        if (animator != null)
-            animator.SetBool("run", false);
     }
 }

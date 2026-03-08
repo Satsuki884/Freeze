@@ -34,6 +34,11 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("run", value);
     }
 
+    public void SetFreeze(bool value)
+    {
+        animator.SetBool("freeze", value);
+    }
+
     private bool isJumping;
     private bool isSliding;
     private bool isStunned;
@@ -160,14 +165,14 @@ public class PlayerController : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX("hit");
         StartCoroutine(StunRoutine("hit"));
-        AlertSystem.Instance.AddAlert(1f);
+        AlertSystem.Instance.AddAlert(2f);
     }
 
     void HitLowObstacle()
     {
         AudioManager.Instance.PlaySFX("slip");
         StartCoroutine(StunRoutine("slip"));
-        AlertSystem.Instance.AddAlert(1f);
+        AlertSystem.Instance.AddAlert(2f);
     }
 
     System.Collections.IEnumerator StunRoutine(string boolName)
