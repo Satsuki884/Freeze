@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: efba91f418e95bb42aab0cb18f517500
+guid: 523c173d8cae35e42bd0e705ac19d3c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5387562833892707887
-    second: image0_0
+      213: -8049738596340491021
+    second: texture_0
   - first:
-      213: -1381719273282938521
-    second: image0_1
+      213: -3589738470123372747
+    second: texture_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image0_0
+      name: texture_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 447
-        width: 193
-        height: 65
+        y: 0
+        width: 11
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d17ab8a5288b35b0800000000000000
-      internalID: -5387562833892707887
+      spriteID: 3fc9f5e5565994090800000000000000
+      internalID: -8049738596340491021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image0_1
+      name: texture_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 263
-        width: 13
-        height: 150
+        x: 9
+        y: 3
+        width: 7
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 769d8a044a523dce0800000000000000
-      internalID: -1381719273282938521
+      spriteID: 53ffdb371efae2ec0800000000000000
+      internalID: -3589738470123372747
       vertices: []
       indices: 
       edges: []
@@ -199,8 +199,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image0_0: -5387562833892707887
-      image0_1: -1381719273282938521
+      texture_0: -8049738596340491021
+      texture_1: -3589738470123372747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: efba91f418e95bb42aab0cb18f517500
+guid: c9158c4fa9394b44aba77884d932005e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5387562833892707887
-    second: image0_0
-  - first:
-      213: -1381719273282938521
-    second: image0_1
+      213: 1694567077108551606
+    second: clockb_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -142,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image0_0
+      name: clockb_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 447
-        width: 193
-        height: 65
+        y: 7
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,30 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d17ab8a5288b35b0800000000000000
-      internalID: -5387562833892707887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: image0_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 263
-        width: 13
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 769d8a044a523dce0800000000000000
-      internalID: -1381719273282938521
+      spriteID: 6bf802747cf448710800000000000000
+      internalID: 1694567077108551606
       vertices: []
       indices: 
       edges: []
@@ -199,8 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image0_0: -5387562833892707887
-      image0_1: -1381719273282938521
+      clockb_0: 1694567077108551606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

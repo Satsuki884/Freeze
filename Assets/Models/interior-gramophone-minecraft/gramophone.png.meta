@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: efba91f418e95bb42aab0cb18f517500
+guid: b5801ac51ef72234b9eb628a63313126
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5387562833892707887
-    second: image0_0
+      213: -1663643670907067039
+    second: gramophone_0
   - first:
-      213: -1381719273282938521
-    second: image0_1
+      213: -80159543708390306
+    second: gramophone_1
+  - first:
+      213: 4767570407285132239
+    second: gramophone_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image0_0
+      name: gramophone_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 447
-        width: 193
-        height: 65
+        y: 0
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d17ab8a5288b35b0800000000000000
-      internalID: -5387562833892707887
+      spriteID: 165e1ca45ec89e8e0800000000000000
+      internalID: -1663643670907067039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image0_1
+      name: gramophone_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 263
-        width: 13
-        height: 150
+        x: 14
+        y: 14
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +182,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 769d8a044a523dce0800000000000000
-      internalID: -1381719273282938521
+      spriteID: e5c67e7d15733eef0800000000000000
+      internalID: -80159543708390306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gramophone_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb05e79600d92240800000000000000
+      internalID: 4767570407285132239
       vertices: []
       indices: 
       edges: []
@@ -199,8 +224,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image0_0: -5387562833892707887
-      image0_1: -1381719273282938521
+      gramophone_0: -1663643670907067039
+      gramophone_1: -80159543708390306
+      gramophone_2: 4767570407285132239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
