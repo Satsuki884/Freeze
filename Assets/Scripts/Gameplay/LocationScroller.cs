@@ -25,6 +25,10 @@ public class LocationScroller : MonoBehaviour
     [SerializeField] private int maxEmptySegments = 3;
     [SerializeField] private int obstacleStartSegment = 4;
 
+    [Header("Decoration Settings")]
+    [SerializeField] private int minDecorations = 0;
+    [SerializeField] private int maxDecorations = 4;
+
     private int emptySegmentsCounter = 0;
     private int spawnedSegments = 0;
 
@@ -92,6 +96,7 @@ public class LocationScroller : MonoBehaviour
             segmentLengths.Add(data.Length);
 
             SpawnObstacle(segment);
+            SpawnDecorations(segment, data);
 
             spawnX += data.Length;
         }
@@ -131,6 +136,7 @@ public class LocationScroller : MonoBehaviour
             );
 
             SpawnObstacle(newSegment);
+            SpawnDecorations(newSegment, data);
 
             activeSegments.Add(newSegment);
             segmentLengths.Add(data.Length);
@@ -192,5 +198,52 @@ public class LocationScroller : MonoBehaviour
     public void StopScrolling()
     {
         isMoving = false;
+    }
+
+    void SpawnDecorations(GameObject segment, LocationDatabase.LocationData location)
+    {
+        if (decorationDatabase == null) return;
+
+        DecorPoint[] floorPoints = segment.GetComponentsInChildren<DecorPoint>();
+        WallPoint[] wallPoints = segment.GetComponentsInChildren<WallPoint>();
+
+        List<Transform> availableFloorPoints = new List<Transform>();
+        List<Transform> availableWallPoints = new List<Transform>();
+
+        foreach (var p in floorPoints)
+            availableFloorPoints.Add(p.transform);
+
+        foreach (var p in wallPoints)
+            availableWallPoints.Add(p.transform);
+
+        int count = Random.Range(minDecorations, maxDecorations + 1);
+
+        for (int i = 0; i < count; i++)
+        {
+            bool spawnWall = Random.value > 0.5f;
+
+            if (spawnWall && availableWallPoints.Count > 0)
+            {
+                int index = Random.Range(0, availableWallPoints.Count);
+                Transform point = availableWallPoints[index];
+                availableWallPoints.RemoveAt(index);
+
+                GameObject prefab = decorationDatabase.GetRandomDecoration(location, DecorationType.wall);
+
+                if (prefab != null)
+                    Instantiate(prefab, point.position, Quaternion.identity, segment.transform);
+            }
+            else if (availableFloorPoints.Count > 0)
+            {
+                int index = Random.Range(0, availableFloorPoints.Count);
+                Transform point = availableFloorPoints[index];
+                availableFloorPoints.RemoveAt(index);
+
+                GameObject prefab = decorationDatabase.GetRandomDecoration(location, DecorationType.floor);
+
+                if (prefab != null)
+                    Instantiate(prefab, point.position, Quaternion.identity, segment.transform);
+            }
+        }
     }
 }

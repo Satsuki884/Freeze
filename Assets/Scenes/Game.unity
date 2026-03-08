@@ -616,11 +616,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LocationScroller
   locationDatabase: {fileID: 11400000, guid: 0277391d76202b44c92a7f052ce57c9a, type: 2}
   obstacleDatabase: {fileID: 11400000, guid: 2601472dc4c915341a013c23272337de, type: 2}
+  decorationDatabase: {fileID: 11400000, guid: c325617f2752a6f4291d99c98bc1ed56, type: 2}
   poolSize: 6
   moveSpeed: 5
-  obstacleSpawnChance: 1
+  obstacleSpawnChance: 0.416
   maxEmptySegments: 3
   obstacleStartSegment: 4
+  minDecorations: 0
+  maxDecorations: 4
   scoreMultiplier: 1
 --- !u!1 &246021580
 GameObject:
