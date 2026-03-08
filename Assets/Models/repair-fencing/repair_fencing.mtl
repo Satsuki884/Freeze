@@ -9,7 +9,7 @@ Ke 0.0 0.0 0.0
 Ni 1.0
 d 1
 illum 2
-map_Kd texture.png
+map_Kd material_0_baseColor.png
 
 newmtl mat1
 Ns 0
@@ -20,7 +20,7 @@ Ke 0.0 0.0 0.0
 Ni 1.0
 d 1
 illum 2
-map_Kd texture.png
+map_Kd material_1_baseColor.png
 
 newmtl mat2
 Ns 0
@@ -31,7 +31,7 @@ Ke 0.0 0.0 0.0
 Ni 1.0
 d 1
 illum 2
-map_Kd texture.png
+map_Kd material_2_baseColor.png
 
 newmtl mat3
 Ns 0
