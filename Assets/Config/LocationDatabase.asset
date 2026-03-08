@@ -13,63 +13,229 @@ MonoBehaviour:
   m_Name: LocationDatabase
   m_EditorClassIdentifier: Assembly-CSharp::LocationDatabase
   locations:
-  - _name: 1
+  - _name: lib_1
     _prefab: {fileID: 2892432859282294307, guid: 3d6e581f0ce60b94bb4b8393b74ba4f7, type: 3}
     _length: 8
-    _weight: 8
+    _weight: 2
     _nextLocationNames:
-    - 2
-    - 3
-    - 4
-  - _name: 2
+    - lib_2
+    - lib_3
+    - lib_4
+    _type: 0
+  - _name: lib_2
     _prefab: {fileID: 4840963903546403712, guid: 66c29b2863514e849a67f94c4b4e89f6, type: 3}
     _length: 8
-    _weight: 8
+    _weight: 2
     _nextLocationNames:
-    - 2
-    - 3
-    - 4
-  - _name: 3
+    - lib_2
+    - lib_3
+    - lib_4
+    _type: 0
+  - _name: lib_3
     _prefab: {fileID: 1129458496379925888, guid: 03c192cfc23a4994ba0cbc4a0f45527c, type: 3}
     _length: 8
-    _weight: 8
+    _weight: 2
     _nextLocationNames:
-    - 2
-    - 3
-    - 4
-  - _name: 4
+    - lib_2
+    - lib_3
+    - lib_4
+    _type: 0
+  - _name: lib_4
     _prefab: {fileID: 788566571099355709, guid: de8ab9ad70ec99d4bb2927af9562414b, type: 3}
     _length: 8
-    _weight: 8
+    _weight: 2
     _nextLocationNames:
-    - 5
-    - 6
-    - 7
-    - 1
-  - _name: 5
+    - lib_1
+    - lib_5
+    - lib_6
+    - lib_7
+    - connector
+    _type: 0
+  - _name: lib_5
     _prefab: {fileID: 9048342700832937679, guid: 31736a97d20ef5b46b00cfe8ca83c12c, type: 3}
     _length: 8
-    _weight: 8
+    _weight: 2
     _nextLocationNames:
-    - 5
-    - 6
-    - 7
-    - 1
-  - _name: 6
+    - lib_1
+    - lib_5
+    - lib_6
+    - lib_7
+    - connector
+    _type: 0
+  - _name: lib_6
     _prefab: {fileID: 8720416876481790350, guid: b4b0b9c61243dd84e967b7aaa1d61341, type: 3}
     _length: 8
-    _weight: 8
+    _weight: 2
     _nextLocationNames:
-    - 5
-    - 6
-    - 7
-    - 1
-  - _name: 7
+    - lib_1
+    - lib_5
+    - lib_6
+    - lib_7
+    - connector
+    _type: 0
+  - _name: lib_7
     _prefab: {fileID: 1740405673108978064, guid: 8441ab66c3a37554b8510c710203f13c, type: 3}
     _length: 8
-    _weight: 8
+    _weight: 2
     _nextLocationNames:
-    - 5
-    - 6
-    - 7
-    - 1
+    - lib_1
+    - lib_5
+    - lib_6
+    - lib_7
+    - connector
+    _type: 0
+  - _name: gal_1
+    _prefab: {fileID: 5309757746896068156, guid: 5e8704d7a76684c489505136c4c38b09, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - gal_2
+    - gal_3
+    - gal_4
+    _type: 2
+  - _name: gal_2
+    _prefab: {fileID: 2760888982411339846, guid: f15ba39322c3d22459d665d210b7cf29, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - gal_2
+    - gal_3
+    - gal_4
+    _type: 2
+  - _name: gal_3
+    _prefab: {fileID: 5804842771060620951, guid: fcb4b7606a45051468e9eb474c54cf28, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - gal_2
+    - gal_3
+    - gal_4
+    _type: 2
+  - _name: gal_4
+    _prefab: {fileID: 7544577291292085987, guid: 89762f9265d83f840a6b02f5aa1933dc, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - gal_1
+    - gal_5
+    - gal_6
+    - connector
+    _type: 2
+  - _name: gal_5
+    _prefab: {fileID: 2231285489753515853, guid: cb516be49fd1243439e4bfe1a2c96a8a, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - gal_1
+    - gal_5
+    - gal_6
+    - connector
+    _type: 2
+  - _name: gal_6
+    _prefab: {fileID: 8500734872051906193, guid: 9f29f27778b7cfe428feb5e507bd4c9b, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - gal_1
+    - gal_5
+    - gal_6
+    - connector
+    _type: 2
+  - _name: mus_1
+    _prefab: {fileID: 8653525404664232835, guid: 7ac70bc9078faed4880f868d645a8e37, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - mus_2
+    - mus_3
+    _type: 1
+  - _name: mus_2
+    _prefab: {fileID: 2014659232208816276, guid: ffcd43e705a0b544c890803874a7ef65, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - mus_2
+    - mus_3
+    _type: 1
+  - _name: mus_3
+    _prefab: {fileID: 5778178619880548860, guid: e5cc462530a76514b822c4c02938fb5d, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - mus_1
+    - mus_4
+    - connector
+    _type: 1
+  - _name: mus_4
+    _prefab: {fileID: 6984936259899830985, guid: a8162bc5e81bf444c9dd3b44d8ccc00c, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - mus_1
+    - mus_4
+    - connector
+    _type: 1
+  - _name: store_1
+    _prefab: {fileID: 4669049256753607468, guid: 0634c2e17461bd24386d0241cd3467f8, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - store_2
+    - store_3
+    _type: 3
+  - _name: store_2
+    _prefab: {fileID: 1303551001784721624, guid: 96d0631ec926a714ab0c3cfef4727faf, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - store_2
+    - store_3
+    _type: 3
+  - _name: store_3
+    _prefab: {fileID: 189993040447119782, guid: 4fb2a8c11614dd34a91aaea5c758ca90, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - store_1
+    - store_4
+    - store_5
+    - connector
+    _type: 3
+  - _name: store_4
+    _prefab: {fileID: 5718486936252333770, guid: 962233fb0c53e32418751e62ffb0ebe1, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - store_1
+    - store_4
+    - store_5
+    - connector
+    _type: 3
+  - _name: store_5
+    _prefab: {fileID: 3214391727091569492, guid: 7e3c5d1981334c6468b65a1e8c98fadf, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - store_1
+    - store_4
+    - store_5
+    - connector
+    _type: 3
+  - _name: connector
+    _prefab: {fileID: 1994255630006416613, guid: 712761d7cef20494d9ed581766a5dddf, type: 3}
+    _length: 8
+    _weight: 2
+    _nextLocationNames:
+    - gal_1
+    - gal_5
+    - gal_6
+    - lib_1
+    - lib_5
+    - lib_6
+    - lib_7
+    - mus_1
+    - mus_4
+    - store_1
+    - store_4
+    - store_5
+    _type: 4

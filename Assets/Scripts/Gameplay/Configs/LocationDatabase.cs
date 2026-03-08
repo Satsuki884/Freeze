@@ -6,7 +6,8 @@ public enum LocationType
     library,
     museum,
     galery,
-    storage
+    storage,
+    connector
 }
 
 [CreateAssetMenu(fileName = "LocationDatabase", menuName = "Game/Location Database")]
