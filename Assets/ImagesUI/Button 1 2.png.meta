@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 35fa7a061b547e44482500f9959c4269
+guid: 84ecc56f06ccd4d4699eadf79b7282a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8878088185706026076
-    second: pause_0
-  - first:
-      213: -175405258591694595
-    second: pause_1
+      213: 2896305782957981881
+    second: Button 1 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pause_0
+      name: Button 1 2_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 44
-        width: 141
-        height: 147
+        x: 56
+        y: 15
+        width: 425
+        height: 226
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ab666e45d1bac480800000000000000
-      internalID: -8878088185706026076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pause_1
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 45
-        width: 63
-        height: 146
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df018edb8d5d09df0800000000000000
-      internalID: -175405258591694595
+      spriteID: 9b0ce1aa3ceb13820800000000000000
+      internalID: 2896305782957981881
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: abd87c7f5e120f64e9af37cce83bd94f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pause_0: -8878088185706026076
-      pause_1: -175405258591694595
+      Button 1 2_0: 2896305782957981881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
