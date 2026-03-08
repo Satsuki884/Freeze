@@ -16,6 +16,12 @@ MonoBehaviour:
   - _type: 0
     _prefab: {fileID: 74404616577318600, guid: ca331bf751585074d88763f51e4b4d85, type: 3}
     _locationTypes: 0300000001000000
-  - _type: 0
+  - _type: 1
     _prefab: {fileID: 9033879091611903264, guid: d0198f1dcfe89a34997eddc7d08320d6, type: 3}
     _locationTypes: 03000000010000000000000002000000
+  - _type: 0
+    _prefab: {fileID: 6939330348711862073, guid: 775f5b888186f6e4ab7ee5313957f028, type: 3}
+    _locationTypes: 0300000002000000
+  - _type: 1
+    _prefab: {fileID: 1076742473080677024, guid: ddd247cb01c1fa849b0fbece6959618b, type: 3}
+    _locationTypes: 030000000100000002000000

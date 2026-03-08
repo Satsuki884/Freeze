@@ -3,6 +3,13 @@ using UnityEngine;
 
 public class LocationScroller : MonoBehaviour
 {
+    public static LocationScroller Instance;
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
     [Header("Database")]
     public LocationDatabase locationDatabase;
     public ObstacleDatabase obstacleDatabase;
@@ -16,6 +23,7 @@ public class LocationScroller : MonoBehaviour
     [SerializeField] private float obstacleSpawnChance = 0.35f;
     [SerializeField] private int maxEmptySegments = 3;
     [SerializeField] private int obstacleStartSegment = 4;
+
     private int emptySegmentsCounter = 0;
     private int spawnedSegments = 0;
 
@@ -132,7 +140,6 @@ public class LocationScroller : MonoBehaviour
     {
         spawnedSegments++;
 
-        // перші сегменти без obstacle
         if (spawnedSegments < obstacleStartSegment)
             return;
 
