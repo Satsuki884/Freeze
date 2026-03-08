@@ -47,6 +47,7 @@ public class AlertSystem : MonoBehaviour
 
         if (currentAlert >= maxAlert)
         {
+            AudioManager.Instance.PlaySFX("whistle");
             StartMiniGame();
         }
     }

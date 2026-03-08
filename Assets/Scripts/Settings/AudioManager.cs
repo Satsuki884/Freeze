@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -25,6 +22,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip _slideMusic;
     [SerializeField] private AudioClip _hitMusic;
     [SerializeField] private AudioClip _slipMusic;
+    [SerializeField] private AudioClip _whistleMusic;
     [SerializeField] private AudioClip _gameOverMusic;
 
     private void Start()
@@ -33,27 +31,26 @@ public class AudioManager : MonoBehaviour
     }
     public void PlayMusic(string musicName)
     {
-        Debug.Log("Playing music: " + musicName);
-        // AudioClip targetMusic = null;
+        AudioClip targetMusic = null;
 
-        // switch (musicName)
-        // {
-        //     case "menu":
-        //         targetMusic = _menuMusic;
-        //         break;
-        //     case "game":
-        //         targetMusic = _gameMusic;
-        //         break;
-        //     case "miniGame":
-        //         targetMusic = _miniGameMusic;
-        //         break;
-        // }
+        switch (musicName)
+        {
+            case "menu":
+                targetMusic = _menuMusic;
+                break;
+            case "game":
+                targetMusic = _gameMusic;
+                break;
+            case "miniGame":
+                targetMusic = _miniGameMusic;
+                break;
+        }
 
-        // if (targetMusic != null && _musicSource.clip != targetMusic)
-        // {
-        //     _musicSource.clip = targetMusic;
-        //     _musicSource.Play();
-        // }
+        if (targetMusic != null && _musicSource.clip != targetMusic)
+        {
+            _musicSource.clip = targetMusic;
+            _musicSource.Play();
+        }
     }
 
     public void PlaySFX(string clipName)
@@ -71,6 +68,9 @@ public class AudioManager : MonoBehaviour
                 break;
             case "slip":
                 _sfxSource.PlayOneShot(_slipMusic);
+                break;
+            case "whistle":
+                _sfxSource.PlayOneShot(_whistleMusic);
                 break;
             case "gameOver":
                 _sfxSource.PlayOneShot(_gameOverMusic);

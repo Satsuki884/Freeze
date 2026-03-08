@@ -2713,7 +2713,7 @@ MonoBehaviour:
   _musicSource: {fileID: 210379240}
   _sfxSource: {fileID: 757904004}
   _menuMusic: {fileID: 0}
-  _gameMusic: {fileID: 0}
+  _gameMusic: {fileID: 8300000, guid: 5a92c99daff05344c8b600ab4306e30d, type: 3}
   _miniGameMusic: {fileID: 0}
   _jumpMusic: {fileID: 0}
   _slideMusic: {fileID: 0}
