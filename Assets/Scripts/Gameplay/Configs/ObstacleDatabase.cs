@@ -19,8 +19,8 @@ public class ObstacleDatabase : ScriptableObject
         [SerializeField] private GameObject _prefab;
         public GameObject Prefab => _prefab;
 
-        [SerializeField] private LocationType _locationType;
-        public LocationType LocationType => _locationType;
+        [SerializeField] private List<LocationType> _locationTypes;
+        public List<LocationType> LocationTypes => _locationTypes;
     }
 
     public List<ObstacleData> obstacles = new();
@@ -31,7 +31,7 @@ public class ObstacleDatabase : ScriptableObject
 
         foreach (var obstacle in obstacles)
         {
-            if (obstacle.LocationType == location.Type)
+            if (obstacle.LocationTypes.Contains(location.Type))
                 pool.Add(obstacle);
         }
 

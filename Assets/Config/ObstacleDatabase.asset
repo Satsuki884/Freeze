@@ -15,7 +15,10 @@ MonoBehaviour:
   obstacles:
   - _type: 0
     _prefab: {fileID: 3487735192308540414, guid: 163baf3c415f93442b283425de90a397, type: 3}
-    _locationType: 1
+    _locationTypes: 0100000000000000
   - _type: 1
     _prefab: {fileID: 2443071886048646786, guid: f6f755a7cb2009440b12e7a6b3f0695f, type: 3}
-    _locationType: 0
+    _locationTypes: 0200000003000000
+  - _type: 1
+    _prefab: {fileID: 9033879091611903264, guid: d0198f1dcfe89a34997eddc7d08320d6, type: 3}
+    _locationTypes: 00000000010000000200000003000000

@@ -11,6 +11,14 @@ public class LocationScroller : MonoBehaviour
     public int poolSize = 6;
     public float moveSpeed = 5f;
 
+    [Header("Obstacle Settings")]
+    [Range(0f, 1f)]
+    [SerializeField] private float obstacleSpawnChance = 0.35f;
+    [SerializeField] private int maxEmptySegments = 3;
+    [SerializeField] private int obstacleStartSegment = 4;
+    private int emptySegmentsCounter = 0;
+    private int spawnedSegments = 0;
+
     [Header("Score")]
     [SerializeField] private float scoreMultiplier = 1f;
 
@@ -122,15 +130,50 @@ public class LocationScroller : MonoBehaviour
 
     void SpawnObstacle(GameObject segment)
     {
+        spawnedSegments++;
+
+        // перші сегменти без obstacle
+        if (spawnedSegments < obstacleStartSegment)
+            return;
+
         if (obstacleDatabase == null) return;
 
-        if (Random.value < 0.5f) return;
+        bool spawn = Random.value < obstacleSpawnChance;
+
+        if (emptySegmentsCounter >= maxEmptySegments)
+            spawn = true;
+
+        if (!spawn)
+        {
+            emptySegmentsCounter++;
+            return;
+        }
 
         GameObject obstaclePrefab = obstacleDatabase.GetRandomObstacle(lastLocation);
 
-        if (obstaclePrefab == null) return;
+        if (obstaclePrefab == null)
+        {
+            emptySegmentsCounter++;
+            return;
+        }
 
-        Instantiate(obstaclePrefab, segment.transform);
+        ObstaclePoint[] points = segment.GetComponentsInChildren<ObstaclePoint>();
+
+        Vector3 spawnPosition;
+
+        if (points.Length > 0)
+        {
+            ObstaclePoint randomPoint = points[Random.Range(0, points.Length)];
+            spawnPosition = randomPoint.transform.position;
+        }
+        else
+        {
+            spawnPosition = segment.transform.position;
+        }
+
+        Instantiate(obstaclePrefab, spawnPosition, Quaternion.identity, segment.transform);
+
+        emptySegmentsCounter = 0;
     }
 
     public void StartScrolling()
