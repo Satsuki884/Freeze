@@ -6,16 +6,20 @@ using UnityEngine.SceneManagement;
 public class UIcontroller : MonoBehaviour
 {
     public static UIcontroller Instance;
+
     void Awake()
     {
         Instance = this;
     }
+
     [Header("Canvases")]
     [SerializeField] private GameObject _mainMenuPanel;
     [SerializeField] private GameObject _gameplayPanel;
+    [SerializeField] private GameObject _miniGamePanel;
 
     [Header("Panels")]
     [SerializeField] private GameObject _pausePanel;
+    [SerializeField] private GameObject _gameOverPanel;
 
     [Header("Menu Buttons")]
     [SerializeField] private Button _startButton;
@@ -26,6 +30,7 @@ public class UIcontroller : MonoBehaviour
     [SerializeField] private Button _pauseButton;
     [SerializeField] private Button _resumeButton;
     [SerializeField] private Button _restartButton;
+    [SerializeField] private Button _startNewGameButton;
 
     [Header("UI Elements")]
     [SerializeField] private TMP_Text _scoreTextTMP;
@@ -37,9 +42,11 @@ public class UIcontroller : MonoBehaviour
 
     void Start()
     {
-        _recordTextTMP.text = "Record:"+ PlayerPrefs.GetInt("HighScore", 0).ToString();
+        _recordTextTMP.text = "Record: " + PlayerPrefs.GetInt("HighScore", 0).ToString();
+
         _playerAnimator.SetBool("idle", true);
         _playerAnimator.SetBool("run", false);
+
         SetAllPanelsInactive();
 
         if (_mainMenuPanel != null)
@@ -94,6 +101,11 @@ public class UIcontroller : MonoBehaviour
             _restartButton.onClick.RemoveAllListeners();
             _restartButton.onClick.AddListener(RestartGame);
         }
+        if (_startNewGameButton != null)
+        {
+            _startNewGameButton.onClick.RemoveAllListeners();
+            _startNewGameButton.onClick.AddListener(RestartGame);
+        }
     }
 
     void StartGame()
@@ -103,10 +115,17 @@ public class UIcontroller : MonoBehaviour
         if (_gameplayPanel != null)
             _gameplayPanel.SetActive(true);
 
+        if (_miniGamePanel != null)
+            _miniGamePanel.SetActive(false);
+
         _scoreTextTMP.text = "0";
+
         Time.timeScale = 1f;
         isPaused = false;
-        _locationScroller.StartScrolling();
+
+        if (_locationScroller != null)
+            _locationScroller.StartScrolling();
+
         _playerAnimator.SetBool("idle", false);
         _playerAnimator.SetBool("run", true);
     }
@@ -138,10 +157,33 @@ public class UIcontroller : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void ShowMiniGame()
+    {
+        if (_miniGamePanel != null)
+            _miniGamePanel.SetActive(true);
+        // Time.timeScale = 0f;
+    }
+
+    public System.Collections.IEnumerator HideMiniGame()
+    {
+        if (_miniGamePanel != null)
+            _miniGamePanel.SetActive(false);
+        yield return new WaitForSecondsRealtime(1f);
+        Time.timeScale = 1f;
+    }
+
+    public void ShowGameOver()
+    {
+        if (_gameOverPanel != null)
+            _gameOverPanel.SetActive(true);
+    }
+
     void SetAllPanelsInactive()
     {
         if (_mainMenuPanel != null) _mainMenuPanel.SetActive(false);
         if (_gameplayPanel != null) _gameplayPanel.SetActive(false);
+        if (_miniGamePanel != null) _miniGamePanel.SetActive(false);
         if (_pausePanel != null) _pausePanel.SetActive(false);
+        if (_gameOverPanel != null) _gameOverPanel.SetActive(false);
     }
 }

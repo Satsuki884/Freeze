@@ -79,8 +79,6 @@ public class PlayerController : MonoBehaviour
     {
         if (isSliding || isJumping) return;
 
-        Debug.Log("SLIDE START");
-
         StartCoroutine(SlideRoutine());
     }
 
@@ -124,12 +122,14 @@ public class PlayerController : MonoBehaviour
     {
         StartCoroutine(StunRoutine("hit"));
         Debug.Log("HIT HIGH OBSTACLE");
+        AlertSystem.Instance.AddAlert(1f);
     }
 
     void HitLowObstacle()
     {
         StartCoroutine(StunRoutine("slip"));
         Debug.Log("HIT LOW OBSTACLE");
+        AlertSystem.Instance.AddAlert(1f);
     }
 
     System.Collections.IEnumerator StunRoutine(string boolName)
