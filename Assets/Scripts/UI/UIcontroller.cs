@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class UIcontroller : MonoBehaviour
@@ -123,7 +124,12 @@ public class UIcontroller : MonoBehaviour
         }
     }
 
-    void StartGame()
+    public void StartGame()
+    {
+        StartCoroutine(StartGameRoutine());
+    }
+
+    IEnumerator StartGameRoutine()
     {
         SetAllPanelsInactive();
 
@@ -138,11 +144,16 @@ public class UIcontroller : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
 
+        // запускаем крысу
+        yield return RatController.Instance.StartIntroRun();
+
+        // когда крыса добежала — запускаем игру
         if (_locationScroller != null)
             _locationScroller.StartScrolling();
 
         _playerAnimator.SetBool("idle", false);
         _playerAnimator.SetBool("run", true);
+
         AudioManager.Instance.PlayMusic("game");
     }
 
