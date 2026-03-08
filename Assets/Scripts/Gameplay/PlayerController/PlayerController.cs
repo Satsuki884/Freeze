@@ -10,9 +10,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float slowdownMultiplier = 0.5f;
     [SerializeField] private float slowdownTime = 1.5f;
 
+    [Header("SlowUp")]
+    [SerializeField] private float slowupMultiplier = 2f;
+    [SerializeField] private float slowupTime = 1.5f;
+
     [Header("References")]
     [SerializeField] private Animator animator;
     [SerializeField] private Transform playerVisual;
+
+    [SerializeField] private float reactionWindow = 0.25f;
+    private float lastJumpPressTime = -10f;
+    private float lastSlidePressTime = -10f;
 
     private Vector3 startPosition;
 
@@ -31,11 +39,13 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
+            lastJumpPressTime = Time.time;
             StartJump();
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
+            lastSlidePressTime = Time.time;
             StartSlide();
         }
     }
@@ -88,7 +98,15 @@ public class PlayerController : MonoBehaviour
 
         animator.SetBool("slide", true);
 
-        yield return null;//new WaitForSeconds(0.8f);
+        float originalTime = Time.timeScale;
+
+        Time.timeScale = slowupMultiplier;
+
+        yield return null;//new WaitForSecondsRealtime(slowupTime);
+
+        Time.timeScale = originalTime;
+
+        //yield return null;//new WaitForSeconds(0.8f);
 
         animator.SetBool("slide", false);
 
@@ -98,12 +116,16 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Obstacle obstacle = other.GetComponent<Obstacle>();
-
         if (obstacle == null) return;
+
+        if (obstacle.triggered) return;
+        obstacle.triggered = true;
 
         if (obstacle.type == ObstacleType.jump)
         {
-            if (!isJumping)
+            bool reactedInTime = Time.time - lastJumpPressTime <= reactionWindow;
+
+            if (!reactedInTime)
             {
                 HitHighObstacle();
             }
@@ -111,7 +133,9 @@ public class PlayerController : MonoBehaviour
 
         if (obstacle.type == ObstacleType.slide)
         {
-            if (!isSliding)
+            bool reactedInTime = Time.time - lastSlidePressTime <= reactionWindow;
+
+            if (!reactedInTime)
             {
                 HitLowObstacle();
             }
@@ -121,14 +145,12 @@ public class PlayerController : MonoBehaviour
     void HitHighObstacle()
     {
         StartCoroutine(StunRoutine("hit"));
-        Debug.Log("HIT HIGH OBSTACLE");
         AlertSystem.Instance.AddAlert(1f);
     }
 
     void HitLowObstacle()
     {
         StartCoroutine(StunRoutine("slip"));
-        Debug.Log("HIT LOW OBSTACLE");
         AlertSystem.Instance.AddAlert(1f);
     }
 
