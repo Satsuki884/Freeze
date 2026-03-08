@@ -37,47 +37,88 @@ public class LocationDatabase : ScriptableObject
 
     public List<LocationData> locations = new();
 
-    LocationData GetLocationByName(string name)
+    Dictionary<string, LocationData> lookup;
+
+    void OnEnable()
     {
+        lookup = new Dictionary<string, LocationData>();
+
         foreach (var loc in locations)
         {
-            if (loc.Name == name)
-                return loc;
-        }
+            if (string.IsNullOrWhiteSpace(loc.Name))
+            {
+                Debug.LogError("Location with empty name!");
+                continue;
+            }
 
+            string key = loc.Name.Trim().ToLower();
+
+            if (lookup.ContainsKey(key))
+            {
+                Debug.LogError("Duplicate location name: " + loc.Name);
+                continue;
+            }
+
+            lookup.Add(key, loc);
+        }
+    }
+
+    LocationData GetLocationByName(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            return null;
+
+        name = name.Trim().ToLower();
+
+        if (lookup.TryGetValue(name, out var loc))
+            return loc;
+
+        Debug.LogError("Location not found: " + name);
         return null;
     }
 
     public LocationData GetRandomLocation(LocationData previous = null)
     {
-        List<LocationData> pool = new List<LocationData>();
+        List<LocationData> pool = new();
 
         if (previous != null && previous.NextLocationNames != null && previous.NextLocationNames.Count > 0)
         {
             foreach (var name in previous.NextLocationNames)
             {
                 var loc = GetLocationByName(name);
+
                 if (loc != null)
                     pool.Add(loc);
             }
-        }
 
-        if (pool.Count == 0)
+            // якщо список є, але жодної локації не знайдено
+            if (pool.Count == 0)
+            {
+                Debug.LogError($"Location '{previous.Name}' has invalid NextLocationNames");
+                return previous;
+            }
+        }
+        else
+        {
+            // тільки якщо previous == null
             pool = locations;
+        }
 
         int totalWeight = 0;
 
         foreach (var loc in pool)
-            totalWeight += loc.Weight;
+            totalWeight += Mathf.Max(1, loc.Weight);
 
         int random = Random.Range(0, totalWeight);
 
         foreach (var loc in pool)
         {
-            if (random < loc.Weight)
+            int weight = Mathf.Max(1, loc.Weight);
+
+            if (random < weight)
                 return loc;
 
-            random -= loc.Weight;
+            random -= weight;
         }
 
         return pool[0];

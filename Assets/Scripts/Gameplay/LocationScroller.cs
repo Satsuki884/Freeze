@@ -10,8 +10,10 @@ public class LocationScroller : MonoBehaviour
     [Header("Settings")]
     public int poolSize = 6;
     public float moveSpeed = 5f;
+
     [Header("Score")]
     [SerializeField] private float scoreMultiplier = 1f;
+
     private float distanceTravelled = 0f;
     private int score = 0;
 
@@ -19,6 +21,8 @@ public class LocationScroller : MonoBehaviour
     private List<float> segmentLengths = new List<float>();
 
     private bool isMoving = false;
+
+    LocationDatabase.LocationData lastLocation;
 
     void Start()
     {
@@ -31,7 +35,6 @@ public class LocationScroller : MonoBehaviour
 
         MoveSegments();
         CheckRecycle();
-
         UpdateScore();
     }
 
@@ -46,10 +49,9 @@ public class LocationScroller : MonoBehaviour
             score = newScore;
 
             UIcontroller.Instance.SetScore(score);
+
             if (score > PlayerPrefs.GetInt("HighScore", 0))
-            {
                 PlayerPrefs.SetInt("HighScore", score);
-            }
         }
     }
 
@@ -59,44 +61,23 @@ public class LocationScroller : MonoBehaviour
 
         for (int i = 0; i < poolSize; i++)
         {
-            SpawnSegment(spawnX);
-            spawnX += segmentLengths[i];
+            var data = locationDatabase.GetRandomLocation(lastLocation);
+            lastLocation = data;
+
+            GameObject segment = Instantiate(
+                data.Prefab,
+                new Vector3(spawnX, 0, 0),
+                Quaternion.identity,
+                transform
+            );
+
+            activeSegments.Add(segment);
+            segmentLengths.Add(data.Length);
+
+            SpawnObstacle(segment);
+
+            spawnX += data.Length;
         }
-    }
-    LocationDatabase.LocationData lastLocation;
-
-    void SpawnSegment(float xPos)
-    {
-        // var data = locationDatabase.GetRandomLocation();
-        var data = locationDatabase.GetRandomLocation(lastLocation);
-        lastLocation = data;
-
-        // Debug.Log(lastLocation.Name);
-
-        GameObject segment = Instantiate(
-            data.Prefab,
-            new Vector3(xPos, 0, 0),
-            Quaternion.identity,
-            transform
-        );
-
-        // SpawnObstacle(segment);
-
-        activeSegments.Add(segment);
-        segmentLengths.Add(data.Length);
-    }
-
-    void SpawnObstacle(GameObject segment)
-    {
-        if (obstacleDatabase == null) return;
-
-        if (Random.value < 0.5f) return;
-
-        GameObject obstaclePrefab = obstacleDatabase.GetRandomObstacle(lastLocation);
-
-        if (obstaclePrefab == null) return;
-
-        Instantiate(obstaclePrefab, segment.transform);
     }
 
     void MoveSegments()
@@ -117,18 +98,39 @@ public class LocationScroller : MonoBehaviour
             activeSegments.RemoveAt(0);
             segmentLengths.RemoveAt(0);
 
+            Destroy(first);
+
             float newX = activeSegments[activeSegments.Count - 1].transform.position.x +
                          segmentLengths[segmentLengths.Count - 1];
 
-            var data = locationDatabase.GetRandomLocation();
+            var data = locationDatabase.GetRandomLocation(lastLocation);
+            lastLocation = data;
 
-            first.transform.position = new Vector3(newX, 0, 0);
+            GameObject newSegment = Instantiate(
+                data.Prefab,
+                new Vector3(newX, 0, 0),
+                Quaternion.identity,
+                transform
+            );
 
-            SpawnObstacle(first);
+            SpawnObstacle(newSegment);
 
-            activeSegments.Add(first);
+            activeSegments.Add(newSegment);
             segmentLengths.Add(data.Length);
         }
+    }
+
+    void SpawnObstacle(GameObject segment)
+    {
+        if (obstacleDatabase == null) return;
+
+        if (Random.value < 0.5f) return;
+
+        GameObject obstaclePrefab = obstacleDatabase.GetRandomObstacle(lastLocation);
+
+        if (obstaclePrefab == null) return;
+
+        Instantiate(obstaclePrefab, segment.transform);
     }
 
     public void StartScrolling()
