@@ -136,7 +136,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: 5745e5b5b44e0d04e857f374bec66d85, type: 2}
   - {fileID: 2100000, guid: 5745e5b5b44e0d04e857f374bec66d85, type: 2}
-  - {fileID: 2100000, guid: 22a5cdb0f33a52a47b9163d70ae6c2da, type: 2}
+  - {fileID: 2100000, guid: 56c548f18d1d1bc48b8d72b58ebf7f9b, type: 2}
   - {fileID: 2100000, guid: 036332dae6e38f9429d2ed3bd9e625b7, type: 2}
   - {fileID: 2100000, guid: 830658a5681d5ae40b0e4e02baa222fc, type: 2}
   - {fileID: 2100000, guid: 8d94feec60368e147994feb87c90ed9f, type: 2}
@@ -230,7 +230,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 70a93c7087d9b9549a0eda193246a50a, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: 22a5cdb0f33a52a47b9163d70ae6c2da, type: 2}
+      objectReference: {fileID: 2100000, guid: 56c548f18d1d1bc48b8d72b58ebf7f9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 70a93c7087d9b9549a0eda193246a50a, type: 3}
       propertyPath: m_Name
       value: modern_tripod_floor_lamp
