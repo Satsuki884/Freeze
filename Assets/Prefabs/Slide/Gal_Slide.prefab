@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   type: 1
+  triggered: 0
 --- !u!1 &9012933936562202287
 GameObject:
   m_ObjectHideFlags: 0

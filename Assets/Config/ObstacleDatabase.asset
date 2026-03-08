@@ -14,23 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleDatabase
   obstacles:
   - _type: 0
-    _prefab: {fileID: 74404616577318600, guid: ca331bf751585074d88763f51e4b4d85, type: 3}
+    _prefab: {fileID: 2561710143714131956, guid: 39ad974a907372c4491b4481e43ea629, type: 3}
+    _locationTypes: 03000000
+  - _type: 0
+    _prefab: {fileID: 8879985824088491108, guid: e55b8ee77cf6ee540b5bbc2a641d0c61, type: 3}
+    _locationTypes: 0300000000000000
+  - _type: 0
+    _prefab: {fileID: 543873127575399183, guid: 0f3b9235b8fc651419263598460c0768, type: 3}
     _locationTypes: 0300000001000000
-  - _type: 1
-    _prefab: {fileID: 9033879091611903264, guid: d0198f1dcfe89a34997eddc7d08320d6, type: 3}
-    _locationTypes: 03000000010000000000000002000000
   - _type: 0
     _prefab: {fileID: 6939330348711862073, guid: 775f5b888186f6e4ab7ee5313957f028, type: 3}
     _locationTypes: 0300000002000000
-  - _type: 1
-    _prefab: {fileID: 1076742473080677024, guid: ddd247cb01c1fa849b0fbece6959618b, type: 3}
-    _locationTypes: 030000000100000002000000
   - _type: 0
-    _prefab: {fileID: 543873127575399183, guid: 0f3b9235b8fc651419263598460c0768, type: 3}
+    _prefab: {fileID: 74404616577318600, guid: ca331bf751585074d88763f51e4b4d85, type: 3}
     _locationTypes: 0300000001000000
   - _type: 1
     _prefab: {fileID: 5701401870919098552, guid: 94db8aaad6fa60040ace00ced851623b, type: 3}
     _locationTypes: 0300000001000000
   - _type: 1
+    _prefab: {fileID: 1076742473080677024, guid: ddd247cb01c1fa849b0fbece6959618b, type: 3}
+    _locationTypes: 030000000100000002000000
+  - _type: 1
+    _prefab: {fileID: 9033879091611903264, guid: d0198f1dcfe89a34997eddc7d08320d6, type: 3}
+    _locationTypes: 03000000010000000000000002000000
+  - _type: 1
     _prefab: {fileID: 6059091347634024065, guid: 7b9386f3c8b4fec48b4bf4f23d252fdb, type: 3}
     _locationTypes: 0300000001000000
+  - _type: 1
+    _prefab: {fileID: 7293504833223629765, guid: da2b44dbf8e0dec41a73d7d525cfe18d, type: 3}
+    _locationTypes: 03000000

@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
+    void Awake()
+    {
+        Instance = this;
+    }
+
     [Header("Jump Settings")]
     [SerializeField] private float jumpHeight = 2f;
     [SerializeField] private float jumpDuration = 0.6f;
@@ -23,6 +29,10 @@ public class PlayerController : MonoBehaviour
     private float lastSlidePressTime = -10f;
 
     private Vector3 startPosition;
+    public void SetRun(bool value)
+    {
+        animator.SetBool("run", value);
+    }
 
     private bool isJumping;
     private bool isSliding;
@@ -53,6 +63,8 @@ public class PlayerController : MonoBehaviour
     void StartJump()
     {
         if (isJumping || isSliding) return;
+
+        AudioManager.Instance.PlaySFX("jump");
 
         StartCoroutine(JumpRoutine());
     }
@@ -88,6 +100,8 @@ public class PlayerController : MonoBehaviour
     void StartSlide()
     {
         if (isSliding || isJumping) return;
+
+        AudioManager.Instance.PlaySFX("slide");
 
         StartCoroutine(SlideRoutine());
     }
@@ -144,12 +158,14 @@ public class PlayerController : MonoBehaviour
 
     void HitHighObstacle()
     {
+        AudioManager.Instance.PlaySFX("hit");
         StartCoroutine(StunRoutine("hit"));
         AlertSystem.Instance.AddAlert(1f);
     }
 
     void HitLowObstacle()
     {
+        AudioManager.Instance.PlaySFX("slip");
         StartCoroutine(StunRoutine("slip"));
         AlertSystem.Instance.AddAlert(1f);
     }

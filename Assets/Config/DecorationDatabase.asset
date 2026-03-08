@@ -79,3 +79,24 @@ MonoBehaviour:
   - _type: 1
     _prefab: {fileID: 5269376969851495452, guid: 415ce948ae5b5594d83da7aa91b0e613, type: 3}
     _locationTypes: 01000000
+  - _type: 1
+    _prefab: {fileID: 4347604986124575464, guid: 37f4fa74d3ff3e547815329da98b133d, type: 3}
+    _locationTypes: 00000000
+  - _type: 1
+    _prefab: {fileID: 742801169302766786, guid: 3c9c27d98ab120d47b485f922ebff243, type: 3}
+    _locationTypes: 00000000
+  - _type: 1
+    _prefab: {fileID: 4376768511939104604, guid: 6a39c874d438b2349aea07c7601cdf8f, type: 3}
+    _locationTypes: 00000000
+  - _type: 1
+    _prefab: {fileID: 1708489391402636620, guid: 92906e2286e7785418262406f41e8235, type: 3}
+    _locationTypes: 00000000
+  - _type: 1
+    _prefab: {fileID: 2216652941218049884, guid: 7218d99fa7920694ba737f31c204ff2c, type: 3}
+    _locationTypes: 03000000
+  - _type: 1
+    _prefab: {fileID: 3031999293413950256, guid: 40048e2fc92e1d0438324e28b71bf877, type: 3}
+    _locationTypes: 03000000
+  - _type: 1
+    _prefab: {fileID: 6891508157022777923, guid: fcdcfb9c0fa046140bbdc5f49817717e, type: 3}
+    _locationTypes: 03000000

@@ -253,6 +253,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6871903516905845819}
+  - component: {fileID: 170759762583619144}
+  - component: {fileID: -3317913422567881310}
   m_Layer: 0
   m_Name: office-table-1
   m_TagString: Untagged
@@ -278,6 +280,41 @@ Transform:
   - {fileID: 2244468637199775701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &170759762583619144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6059091347634024065}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.2246237, y: 4.4143066, z: 4.9661136}
+  m_Center: {x: 0.56042814, y: 2.1554961, z: 0.15519547}
+--- !u!114 &-3317913422567881310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6059091347634024065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41bf7bddfb333a4b8685980bb2de1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  type: 1
+  triggered: 0
 --- !u!1 &7630205087144416694
 GameObject:
   m_ObjectHideFlags: 0

@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   type: 1
+  triggered: 0
 --- !u!1001 &6691290593672646193
 PrefabInstance:
   m_ObjectHideFlags: 0

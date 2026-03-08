@@ -99,6 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1294579060174982702}
+  - component: {fileID: 2160336786590400092}
   m_Layer: 0
   m_Name: books
   m_TagString: Untagged
@@ -122,6 +123,19 @@ Transform:
   - {fileID: 4824329778911472108}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2160336786590400092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4347604986124575464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5167b081b778b2a4f994d548eb1a2565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Decoration
+  type: 1
 --- !u!1001 &5006260209524805127
 PrefabInstance:
   m_ObjectHideFlags: 0

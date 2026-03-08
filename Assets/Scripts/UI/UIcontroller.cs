@@ -143,6 +143,7 @@ public class UIcontroller : MonoBehaviour
 
         _playerAnimator.SetBool("idle", false);
         _playerAnimator.SetBool("run", true);
+        AudioManager.Instance.PlayMusic("game");
     }
 
     void TogglePause()
@@ -189,6 +190,7 @@ public class UIcontroller : MonoBehaviour
 
     public void ShowGameOver()
     {
+        AudioManager.Instance.PlaySFX("gameOver");
         if (_gameOverPanel != null)
             _gameOverPanel.SetActive(true);
     }

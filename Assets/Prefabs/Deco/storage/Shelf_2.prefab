@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3516167693067745219}
+  - component: {fileID: -1130356852853071439}
   m_Layer: 0
   m_Name: Shelf_2
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   - {fileID: 4504099079747054601}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1130356852853071439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891508157022777923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5167b081b778b2a4f994d548eb1a2565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Decoration
+  type: 1
 --- !u!1001 &4110519009298992098
 PrefabInstance:
   m_ObjectHideFlags: 0
