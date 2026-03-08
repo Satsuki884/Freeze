@@ -19,12 +19,14 @@ public class UIcontroller : MonoBehaviour
 
     [Header("Panels")]
     [SerializeField] private GameObject _pausePanel;
+    [SerializeField] private GameObject _infoPanel;
     [SerializeField] private GameObject _gameOverPanel;
 
     [Header("Menu Buttons")]
     [SerializeField] private Button _startButton;
     [SerializeField] private Button _soundButton;
     [SerializeField] private Button _infoButton;
+    [SerializeField] private Button _closeInfoButton;
 
     [Header("Game Buttons")]
     [SerializeField] private Button _pauseButton;
@@ -37,6 +39,12 @@ public class UIcontroller : MonoBehaviour
     [SerializeField] private TMP_Text _recordTextTMP;
     [SerializeField] private LocationScroller _locationScroller;
     [SerializeField] private Animator _playerAnimator;
+
+    [Header("Sound")]
+    [SerializeField] private Image _soundIcon;
+    [SerializeField] private Sprite _soundOnSprite;
+    [SerializeField] private Sprite _soundOffSprite;
+    private bool isSoundEnabled;
 
     private bool isPaused = false;
 
@@ -56,6 +64,7 @@ public class UIcontroller : MonoBehaviour
         isPaused = false;
 
         InitializeButtons();
+        SoundStart();
     }
 
     public void SetScore(int score)
@@ -75,13 +84,19 @@ public class UIcontroller : MonoBehaviour
         if (_soundButton != null)
         {
             _soundButton.onClick.RemoveAllListeners();
-            _soundButton.onClick.AddListener(() => Debug.Log("Sound button clicked!"));
+            _soundButton.onClick.AddListener(SoundOnOff);
         }
 
         if (_infoButton != null)
         {
             _infoButton.onClick.RemoveAllListeners();
-            _infoButton.onClick.AddListener(() => Debug.Log("Info button clicked!"));
+            _infoButton.onClick.AddListener(() => _infoPanel.SetActive(true));
+        }
+
+        if (_closeInfoButton != null)
+        {
+            _closeInfoButton.onClick.RemoveAllListeners();
+            _closeInfoButton.onClick.AddListener(() => _infoPanel.SetActive(false));
         }
 
         if (_pauseButton != null)
@@ -183,7 +198,36 @@ public class UIcontroller : MonoBehaviour
         if (_mainMenuPanel != null) _mainMenuPanel.SetActive(false);
         if (_gameplayPanel != null) _gameplayPanel.SetActive(false);
         if (_miniGamePanel != null) _miniGamePanel.SetActive(false);
+        if (_infoPanel != null) _infoPanel.SetActive(false);
         if (_pausePanel != null) _pausePanel.SetActive(false);
         if (_gameOverPanel != null) _gameOverPanel.SetActive(false);
+    }
+
+    void SoundOnOff()
+    {
+        isSoundEnabled = !isSoundEnabled;
+
+        AudioListener.volume = isSoundEnabled ? 1f : 0f;
+
+        PlayerPrefs.SetInt("Sound", isSoundEnabled ? 1 : 0);
+
+        UpdateSoundIcon();
+    }
+
+    void SoundStart()
+    {
+        isSoundEnabled = PlayerPrefs.GetInt("Sound", 1) == 1;
+
+        AudioListener.volume = isSoundEnabled ? 1f : 0f;
+
+        UpdateSoundIcon();
+    }
+
+    void UpdateSoundIcon()
+    {
+        if (_soundIcon != null)
+        {
+            _soundIcon.sprite = isSoundEnabled ? _soundOnSprite : _soundOffSprite;
+        }
     }
 }
