@@ -12,4 +12,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8268a511468976b42924b428d42615fb, type: 3}
   m_Name: DecorationDatabase
   m_EditorClassIdentifier: Assembly-CSharp::DecorationDatabase
-  decorations: []
+  decorations:
+  - _type: 1
+    _prefab: {fileID: 1556036370200248844, guid: fbc54948aa03b054a9991a5d655fb4f6, type: 3}
+    _locationTypes: 0000000001000000020000000300000004000000
+  - _type: 1
+    _prefab: {fileID: 399310412759726057, guid: c18713c6c8031ca45b630dc8b2d0e625, type: 3}
+    _locationTypes: 0000000001000000020000000300000004000000
+  - _type: 1
+    _prefab: {fileID: 4697798881366206879, guid: 13c36e9831d2e86458869f6423dafce5, type: 3}
+    _locationTypes: 0000000001000000020000000300000004000000
+  - _type: 1
+    _prefab: {fileID: 7039519475662954880, guid: bccf4cc76f776414f942d5d9c30b9431, type: 3}
+    _locationTypes: 0000000001000000020000000300000004000000
+  - _type: 0
+    _prefab: {fileID: 9219831141648971214, guid: a75e0777b36fa2747988db79b9dd24bd, type: 3}
+    _locationTypes: 04000000
+  - _type: 1
+    _prefab: {fileID: 7626335639009162351, guid: f252da825924d0d41a738c20b7d3a26d, type: 3}
+    _locationTypes: 04000000
+  - _type: 1
+    _prefab: {fileID: 2364238749108639291, guid: 04e4cdba3bdaaae4d91066283d505ea4, type: 3}
+    _locationTypes: 02000000
+  - _type: 1
+    _prefab: {fileID: 1372550046565221569, guid: f21ed19a44f188d408fb677ccf708e13, type: 3}
+    _locationTypes: 02000000
+  - _type: 0
+    _prefab: {fileID: 5121111661744987184, guid: 311689e4a9d87b64190180da2261f92c, type: 3}
+    _locationTypes: 02000000
+  - _type: 0
+    _prefab: {fileID: 3134850879350948135, guid: 2055bf4e7f746244db70a088611be4a3, type: 3}
+    _locationTypes: 02000000
+  - _type: 0
+    _prefab: {fileID: 1786872582698422663, guid: 2a3b827c3f794a74e91ee5a2b6739621, type: 3}
+    _locationTypes: 02000000
+  - _type: 0
+    _prefab: {fileID: 6303075976818184995, guid: 5be7887505c09c746ba013383b87a63b, type: 3}
+    _locationTypes: 02000000
+  - _type: 1
+    _prefab: {fileID: 6213447355678068607, guid: 7c19f620595149b46b46a196b72f7764, type: 3}
+    _locationTypes: 00000000
+  - _type: 1
+    _prefab: {fileID: 3282104289462608811, guid: 409fd2722f7fa594d95ce093772d0ca1, type: 3}
+    _locationTypes: 00000000
+  - _type: 1
+    _prefab: {fileID: 4927099030010000125, guid: c493d6448cf5a2343a39b9e7cb1fef0d, type: 3}
+    _locationTypes: 01000000
+  - _type: 1
+    _prefab: {fileID: 5715664212107784669, guid: ee8298fb8963d2347a95b8dd1981bb9d, type: 3}
+    _locationTypes: 01000000
+  - _type: 1
+    _prefab: {fileID: 4399759030576396862, guid: e74c5709b16e72a4e9731b9d69d90ced, type: 3}
+    _locationTypes: 01000000
+  - _type: 1
+    _prefab: {fileID: 5989177192678615758, guid: 7c3ce154ec3a95f4184068bc1d1f5643, type: 3}
+    _locationTypes: 01000000
+  - _type: 1
+    _prefab: {fileID: 2906384900993138542, guid: 2d77eacd76df89c4ba2b596ad1ab5ca7, type: 3}
+    _locationTypes: 01000000
+  - _type: 1
+    _prefab: {fileID: 2481608738558715435, guid: c7e88c0a36433284681af21946564b48, type: 3}
+    _locationTypes: 01000000
+  - _type: 1
+    _prefab: {fileID: 4911909373688200301, guid: 955dc3739266eef4d9bed59ea1ca8d0e, type: 3}
+    _locationTypes: 01000000
+  - _type: 1
+    _prefab: {fileID: 5269376969851495452, guid: 415ce948ae5b5594d83da7aa91b0e613, type: 3}
+    _locationTypes: 01000000

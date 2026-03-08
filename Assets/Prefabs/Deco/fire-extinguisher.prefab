@@ -71,5 +71,26 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4efa79d309010724eb8cce4d3b5eccb5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2612120167467084435}
   m_SourcePrefab: {fileID: 100100000, guid: 4efa79d309010724eb8cce4d3b5eccb5, type: 3}
+--- !u!1 &1556036370200248844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4efa79d309010724eb8cce4d3b5eccb5, type: 3}
+  m_PrefabInstance: {fileID: 1826578004542947165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2612120167467084435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556036370200248844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5167b081b778b2a4f994d548eb1a2565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Decoration
+  type: 1

@@ -11,12 +11,13 @@ public class LocationScroller : MonoBehaviour
     }
 
     [Header("Database")]
-    public LocationDatabase locationDatabase;
-    public ObstacleDatabase obstacleDatabase;
+    [SerializeField] private LocationDatabase locationDatabase;
+    [SerializeField] private ObstacleDatabase obstacleDatabase;
+    [SerializeField] private DecorationDatabase decorationDatabase;
 
     [Header("Settings")]
-    public int poolSize = 6;
-    public float moveSpeed = 5f;
+    [SerializeField] private int poolSize = 6;
+    [SerializeField] private float moveSpeed = 5f;
 
     [Header("Obstacle Settings")]
     [Range(0f, 1f)]
