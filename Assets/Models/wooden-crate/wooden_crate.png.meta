@@ -1,0 +1,1560 @@
+fileFormatVersion: 2
+guid: e7753291867d1cc47b92a145a6e67b6c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5916447946158921319
+    second: wooden_crate_0
+  - first:
+      213: 228139335544407808
+    second: wooden_crate_1
+  - first:
+      213: -3881215907599350238
+    second: wooden_crate_2
+  - first:
+      213: 2017386402738756563
+    second: wooden_crate_3
+  - first:
+      213: 1152963615098377665
+    second: wooden_crate_4
+  - first:
+      213: -9014748689483264964
+    second: wooden_crate_5
+  - first:
+      213: -4042371599069731442
+    second: wooden_crate_6
+  - first:
+      213: 2545777351458050544
+    second: wooden_crate_7
+  - first:
+      213: 6199021955227407646
+    second: wooden_crate_8
+  - first:
+      213: -1447964688364913764
+    second: wooden_crate_9
+  - first:
+      213: 8982348917873225935
+    second: wooden_crate_10
+  - first:
+      213: 362708421003329328
+    second: wooden_crate_11
+  - first:
+      213: -8991510339040862140
+    second: wooden_crate_12
+  - first:
+      213: 5090262963490289054
+    second: wooden_crate_13
+  - first:
+      213: -6888271976431695900
+    second: wooden_crate_14
+  - first:
+      213: 924126102227862927
+    second: wooden_crate_15
+  - first:
+      213: -5742399603807427248
+    second: wooden_crate_16
+  - first:
+      213: 3475822234960973394
+    second: wooden_crate_17
+  - first:
+      213: 7558239170928603458
+    second: wooden_crate_18
+  - first:
+      213: -8906619345246171666
+    second: wooden_crate_19
+  - first:
+      213: -5708154311308871253
+    second: wooden_crate_20
+  - first:
+      213: -1563294185817236496
+    second: wooden_crate_21
+  - first:
+      213: 7920589909086842139
+    second: wooden_crate_22
+  - first:
+      213: -9191160162772253734
+    second: wooden_crate_23
+  - first:
+      213: -385469551136251015
+    second: wooden_crate_24
+  - first:
+      213: 3268671876423052739
+    second: wooden_crate_25
+  - first:
+      213: -380526889078623394
+    second: wooden_crate_26
+  - first:
+      213: 2650865938214392123
+    second: wooden_crate_27
+  - first:
+      213: -8477107765684652928
+    second: wooden_crate_28
+  - first:
+      213: 785295013417658793
+    second: wooden_crate_29
+  - first:
+      213: -8740427300633793217
+    second: wooden_crate_30
+  - first:
+      213: -5632679751770945468
+    second: wooden_crate_31
+  - first:
+      213: -315309824103817143
+    second: wooden_crate_32
+  - first:
+      213: -7559721983086733662
+    second: wooden_crate_33
+  - first:
+      213: -9122259426560866323
+    second: wooden_crate_34
+  - first:
+      213: 8710213282977569009
+    second: wooden_crate_35
+  - first:
+      213: 7776443006924488149
+    second: wooden_crate_36
+  - first:
+      213: 687771160407775369
+    second: wooden_crate_37
+  - first:
+      213: -4323804071317489435
+    second: wooden_crate_38
+  - first:
+      213: 8341340469338386402
+    second: wooden_crate_39
+  - first:
+      213: -3906125880848863196
+    second: wooden_crate_40
+  - first:
+      213: -3475069430667974670
+    second: wooden_crate_41
+  - first:
+      213: -5224199484512356758
+    second: wooden_crate_42
+  - first:
+      213: -2006822952526672249
+    second: wooden_crate_43
+  - first:
+      213: 5758034742190093760
+    second: wooden_crate_44
+  - first:
+      213: -5922013987914841909
+    second: wooden_crate_45
+  - first:
+      213: 3400347891092132511
+    second: wooden_crate_46
+  - first:
+      213: 2036278642335465793
+    second: wooden_crate_47
+  - first:
+      213: -4241793371744307191
+    second: wooden_crate_48
+  - first:
+      213: 7583068039954067781
+    second: wooden_crate_49
+  - first:
+      213: 5053830372289094383
+    second: wooden_crate_50
+  - first:
+      213: -2976921125463923579
+    second: wooden_crate_51
+  - first:
+      213: -6237091720140285458
+    second: wooden_crate_52
+  - first:
+      213: 8338739693681119042
+    second: wooden_crate_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wooden_crate_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 231
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999ab1d80fd84eda0800000000000000
+      internalID: -5916447946158921319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 231
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0070b6654838a2300800000000000000
+      internalID: 228139335544407808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 231
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22602f212b6232ac0800000000000000
+      internalID: -3881215907599350238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 251
+        width: 34
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db52f5ae323ffb10800000000000000
+      internalID: 2017386402738756563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_4
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 251
+        width: 26
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c593ec9c46200010800000000000000
+      internalID: 1152963615098377665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 243
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c8eef34dd25e280800000000000000
+      internalID: -9014748689483264964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 235
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e852253b27c96e7c0800000000000000
+      internalID: -4042371599069731442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f154e6530b645320800000000000000
+      internalID: 2545777351458050544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 203
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e155d2cdf99570650800000000000000
+      internalID: 6199021955227407646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_9
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 223
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b33be99cbc7ebe0800000000000000
+      internalID: -1447964688364913764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 227
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0b27210c6b7ac70800000000000000
+      internalID: 8982348917873225935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_11
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 215
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f32fe1369980500800000000000000
+      internalID: 362708421003329328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_12
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 219
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440a7375cfcb73380800000000000000
+      internalID: -8991510339040862140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_13
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 207
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e957a28223f34a640800000000000000
+      internalID: 5090262963490289054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_14
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 211
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7c2801221f760a0800000000000000
+      internalID: -6888271976431695900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 199
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8545f23bc723dc00800000000000000
+      internalID: 924126102227862927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 203
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055e6b02cf5ee40b0800000000000000
+      internalID: -5742399603807427248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ec04138e99c3030800000000000000
+      internalID: 3475822234960973394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_18
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 195
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24174ae0b7244e860800000000000000
+      internalID: 7558239170928603458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 191
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedcaf015e4556480800000000000000
+      internalID: -8906619345246171666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_20
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 195
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9f15f95ef88c0b0800000000000000
+      internalID: -5708154311308871253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_21
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 159
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb1eee78301e4ae0800000000000000
+      internalID: -1563294185817236496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_22
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 159
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d2aa6ae869bed60800000000000000
+      internalID: 7920589909086842139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 187
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad30d306780727080800000000000000
+      internalID: -9191160162772253734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_24
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 183
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9736bcc4c7986aaf0800000000000000
+      internalID: -385469551136251015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 151
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd6181e0c7ac5d20800000000000000
+      internalID: 3268671876423052739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_26
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 151
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53fbfc7fc818baf0800000000000000
+      internalID: -380526889078623394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_27
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 179
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b319372a684c9c420800000000000000
+      internalID: 2650865938214392123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_28
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 175
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08439a796634b5a80800000000000000
+      internalID: -8477107765684652928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 5
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a925ae67ade5ea00800000000000000
+      internalID: 785295013417658793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_30
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 139
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3da898cda3c3b680800000000000000
+      internalID: -8740427300633793217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_31
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 139
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4484826eb93b4d1b0800000000000000
+      internalID: -5632679751770945468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_32
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 143
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940e914b26bcf9bf0800000000000000
+      internalID: -315309824103817143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_33
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 143
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a65765d8e8761790800000000000000
+      internalID: -7559721983086733662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_34
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 143
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de781e22269376180800000000000000
+      internalID: -9122259426560866323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_35
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 143
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f854c905d4e0e870800000000000000
+      internalID: 8710213282977569009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_36
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 143
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddfdc3a6b97beb60800000000000000
+      internalID: 7776443006924488149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_37
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 167
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9881dd6f9347b8900800000000000000
+      internalID: 687771160407775369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_38
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 139
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8bbba0b13cef3c0800000000000000
+      internalID: -4323804071317489435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_39
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 159
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef218966f462c370800000000000000
+      internalID: 8341340469338386402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_40
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 131
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4203b08f437aac9c0800000000000000
+      internalID: -3906125880848863196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_41
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 131
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f76737b3c216cfc0800000000000000
+      internalID: -3475069430667974670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_42
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 151
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66bcd17f3aef77b0800000000000000
+      internalID: -5224199484512356758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_43
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 123
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e0c8348255624e0800000000000000
+      internalID: -2006822952526672249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_44
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 123
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c539943716a8ef40800000000000000
+      internalID: 5758034742190093760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_45
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 143
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0017777a7c0dda0800000000000000
+      internalID: -5922013987914841909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 5
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f929b412466703f20800000000000000
+      internalID: 3400347891092132511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_47
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 111
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141ce14f2a0524c10800000000000000
+      internalID: 2036278642335465793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_48
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908f292076f1225c0800000000000000
+      internalID: -4241793371744307191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_49
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 135
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 541741d94387c3960800000000000000
+      internalID: 7583068039954067781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_50
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 115
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe22f5f72ffc22640800000000000000
+      internalID: 5053830372289094383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_51
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 115
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584ed50420adfa6d0800000000000000
+      internalID: -2976921125463923579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_52
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 115
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9128540266179a0800000000000000
+      internalID: -6237091720140285458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden_crate_53
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 115
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f0054229729b370800000000000000
+      internalID: 8338739693681119042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wooden_crate_0: -5916447946158921319
+      wooden_crate_1: 228139335544407808
+      wooden_crate_10: 8982348917873225935
+      wooden_crate_11: 362708421003329328
+      wooden_crate_12: -8991510339040862140
+      wooden_crate_13: 5090262963490289054
+      wooden_crate_14: -6888271976431695900
+      wooden_crate_15: 924126102227862927
+      wooden_crate_16: -5742399603807427248
+      wooden_crate_17: 3475822234960973394
+      wooden_crate_18: 7558239170928603458
+      wooden_crate_19: -8906619345246171666
+      wooden_crate_2: -3881215907599350238
+      wooden_crate_20: -5708154311308871253
+      wooden_crate_21: -1563294185817236496
+      wooden_crate_22: 7920589909086842139
+      wooden_crate_23: -9191160162772253734
+      wooden_crate_24: -385469551136251015
+      wooden_crate_25: 3268671876423052739
+      wooden_crate_26: -380526889078623394
+      wooden_crate_27: 2650865938214392123
+      wooden_crate_28: -8477107765684652928
+      wooden_crate_29: 785295013417658793
+      wooden_crate_3: 2017386402738756563
+      wooden_crate_30: -8740427300633793217
+      wooden_crate_31: -5632679751770945468
+      wooden_crate_32: -315309824103817143
+      wooden_crate_33: -7559721983086733662
+      wooden_crate_34: -9122259426560866323
+      wooden_crate_35: 8710213282977569009
+      wooden_crate_36: 7776443006924488149
+      wooden_crate_37: 687771160407775369
+      wooden_crate_38: -4323804071317489435
+      wooden_crate_39: 8341340469338386402
+      wooden_crate_4: 1152963615098377665
+      wooden_crate_40: -3906125880848863196
+      wooden_crate_41: -3475069430667974670
+      wooden_crate_42: -5224199484512356758
+      wooden_crate_43: -2006822952526672249
+      wooden_crate_44: 5758034742190093760
+      wooden_crate_45: -5922013987914841909
+      wooden_crate_46: 3400347891092132511
+      wooden_crate_47: 2036278642335465793
+      wooden_crate_48: -4241793371744307191
+      wooden_crate_49: 7583068039954067781
+      wooden_crate_5: -9014748689483264964
+      wooden_crate_50: 5053830372289094383
+      wooden_crate_51: -2976921125463923579
+      wooden_crate_52: -6237091720140285458
+      wooden_crate_53: 8338739693681119042
+      wooden_crate_6: -4042371599069731442
+      wooden_crate_7: 2545777351458050544
+      wooden_crate_8: 6199021955227407646
+      wooden_crate_9: -1447964688364913764
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
