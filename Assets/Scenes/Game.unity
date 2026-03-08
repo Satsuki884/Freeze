@@ -2755,7 +2755,7 @@ MonoBehaviour:
   _sfxSource: {fileID: 757904004}
   _menuMusic: {fileID: 8300000, guid: 5e01e332e05e3fd4d92d57b5b68a999b, type: 3}
   _gameMusic: {fileID: 8300000, guid: 5a92c99daff05344c8b600ab4306e30d, type: 3}
-  _miniGameMusic: {fileID: 0}
+  _miniGameMusic: {fileID: 8300000, guid: 06b08d15e8304484fa1490fa514d38b2, type: 3}
   _jumpMusic: {fileID: 8300000, guid: 90e99b7a46f24a148bc4496b4e0bc88f, type: 3}
   _slideMusic: {fileID: 8300000, guid: 96b96c6ccce05bd42bfcf90fcb9282ba, type: 3}
   _hitMusic: {fileID: 8300000, guid: e84a37951b4e9ec46b7b19b9147d9fbd, type: 3}
@@ -3550,7 +3550,7 @@ MonoBehaviour:
   slider: {fileID: 937772445}
   sliderArea: {fileID: 1273892534}
   greenZone: {fileID: 1624689795}
-  speed: 100
+  speed: 300
 --- !u!114 &1241977327
 MonoBehaviour:
   m_ObjectHideFlags: 0
