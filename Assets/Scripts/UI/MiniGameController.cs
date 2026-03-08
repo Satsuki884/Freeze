@@ -44,6 +44,7 @@ public class MiniGameController : MonoBehaviour
         PlayerController.Instance.SetFreeze(false);
         PlayerController.Instance.SetRun(true);
         RatController.Instance.SetRun(true);
+        AudioManager.Instance.PlayMusic("game");
     }
 
     public void Fail()
