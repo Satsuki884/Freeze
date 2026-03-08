@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 4d9e7f58efae86f4487753d14a0b5138
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4373181916465991542
+    second: doublebusletters2_0
+  - first:
+      213: -8913782685901689073
+    second: doublebusletters2_1
+  - first:
+      213: 2671232842451683765
+    second: doublebusletters2_2
+  - first:
+      213: 4611186995796200788
+    second: doublebusletters2_3
+  - first:
+      213: -5640910843304409385
+    second: doublebusletters2_4
+  - first:
+      213: -6258326769403797671
+    second: doublebusletters2_5
+  - first:
+      213: -8944702870043341446
+    second: doublebusletters2_6
+  - first:
+      213: 2006745837038396155
+    second: doublebusletters2_7
+  - first:
+      213: -5528020015246988674
+    second: doublebusletters2_8
+  - first:
+      213: -5210490855232223278
+    second: doublebusletters2_9
+  - first:
+      213: 6834337311851465488
+    second: doublebusletters2_10
+  - first:
+      213: -8927303119862913089
+    second: doublebusletters2_11
+  - first:
+      213: 5381019747318144285
+    second: doublebusletters2_12
+  - first:
+      213: 6909319961328191502
+    second: doublebusletters2_13
+  - first:
+      213: -4122847715838486628
+    second: doublebusletters2_14
+  - first:
+      213: -3212476998258493342
+    second: doublebusletters2_15
+  - first:
+      213: 3572867575841134133
+    second: doublebusletters2_16
+  - first:
+      213: -6725630396721754854
+    second: doublebusletters2_17
+  - first:
+      213: -5730289507186144856
+    second: doublebusletters2_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: doublebusletters2_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 250
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f0e1d68c9a0bc30800000000000000
+      internalID: 4373181916465991542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 250
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f6dc9dfd1eb4480800000000000000
+      internalID: -8913782685901689073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 247
+        width: 77
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b980be0e10221520800000000000000
+      internalID: 2671232842451683765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 254
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d455d342a3eff30800000000000000
+      internalID: 4611186995796200788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 250
+        width: 52
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6013f897577b1b0800000000000000
+      internalID: -5640910843304409385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 250
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f5e5516f4f529a0800000000000000
+      internalID: -6258326769403797671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 254
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d46a971280ed380800000000000000
+      internalID: -8944702870043341446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 250
+        width: 37
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2ea23e4b469db10800000000000000
+      internalID: 2006745837038396155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 250
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a24f7b5178843b0800000000000000
+      internalID: -5528020015246988674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_9
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 249
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7467c6c2e90b7b0800000000000000
+      internalID: -5210490855232223278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_10
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 250
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bca14439178de50800000000000000
+      internalID: 6834337311851465488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_11
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 250
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7a5528c19db1480800000000000000
+      internalID: -8927303119862913089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_12
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 250
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d924843f83daa40800000000000000
+      internalID: 5381019747318144285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_13
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 250
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e088b7ec5e5d2ef50800000000000000
+      internalID: 6909319961328191502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_14
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 254
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c979a62a8d3b8c6c0800000000000000
+      internalID: -4122847715838486628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_15
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 250
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26870b5c03dfa63d0800000000000000
+      internalID: -3212476998258493342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_16
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 250
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536958f5120659130800000000000000
+      internalID: 3572867575841134133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_17
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 249
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d84d0c9c2c9a2a0800000000000000
+      internalID: -6725630396721754854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublebusletters2_18
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 250
+        width: 64
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a98508bd0ce970b0800000000000000
+      internalID: -5730289507186144856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      doublebusletters2_0: 4373181916465991542
+      doublebusletters2_1: -8913782685901689073
+      doublebusletters2_10: 6834337311851465488
+      doublebusletters2_11: -8927303119862913089
+      doublebusletters2_12: 5381019747318144285
+      doublebusletters2_13: 6909319961328191502
+      doublebusletters2_14: -4122847715838486628
+      doublebusletters2_15: -3212476998258493342
+      doublebusletters2_16: 3572867575841134133
+      doublebusletters2_17: -6725630396721754854
+      doublebusletters2_18: -5730289507186144856
+      doublebusletters2_2: 2671232842451683765
+      doublebusletters2_3: 4611186995796200788
+      doublebusletters2_4: -5640910843304409385
+      doublebusletters2_5: -6258326769403797671
+      doublebusletters2_6: -8944702870043341446
+      doublebusletters2_7: 2006745837038396155
+      doublebusletters2_8: -5528020015246988674
+      doublebusletters2_9: -5210490855232223278
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
